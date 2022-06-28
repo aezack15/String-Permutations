@@ -5,9 +5,10 @@ This program finds all possible permutations of letters given a user inputted st
 Requirements: ```javac``` and ```jar```
 
 ### stringPermutations
-```
-javac stringPermutations.java
-```
+Compile with:
+```javac stringPermutations.java```
+
+Execute with:
 ```example usage: java stringPermutations```
 
 ### Misc
