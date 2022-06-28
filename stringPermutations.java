@@ -12,7 +12,7 @@ public class stringPermutations{
 			cont=sp.tryAgain();
 		}
 	}
-	
+	/*retrieves user generated string*/
 	private String getUserString(){
 		String s="";
 		Scanner in=new Scanner(System.in);
@@ -21,7 +21,7 @@ public class stringPermutations{
 		s=in.next();
 		return s;
 	}
-	
+	/*calculates facotirals used in determining the # of permutations*/
 	private int factorial(int length){
 		if(length==0){
 			return 1;
@@ -40,6 +40,7 @@ public class stringPermutations{
 		for(int i=a.length()-1;i>=0;i--){
 			values[i]=charArray[i];
 		}
+		//calculates the number of duplicate characters in the string.
 		for(int i=0;i<a.length();i++){
 			char check=charArray[i];
 			for(int j=0;j<a.length();j++){
@@ -53,7 +54,7 @@ public class stringPermutations{
 		int total=(factorial(a.length())/denominator);
 		return total;
 	}
-	
+	//finds the number of possible permutations for a given string
 	private int sum(String a, int[] dupes){
 		int total=1;
 		for(int i=0;i<a.length();i++){
@@ -64,7 +65,9 @@ public class stringPermutations{
 		}
 		return total;
 	}
-		
+	/*
+	Implements a highly inefficient algorithm (lol) for creating a new permutation.
+	*/
 	private void findPermutations(String a, int length){
 		int numOfPermutations=numOfP(a);
 		String foo="";
@@ -95,6 +98,7 @@ public class stringPermutations{
 				temp[i].isVisited=false;
 			}
 		}
+		//Collections.sort is awesome!
 		Collections.sort(list);
 		System.out.println("There were " + list.size() + " unique combinations:");
 		System.out.println(list);
@@ -113,8 +117,3 @@ public class stringPermutations{
 		return false;
 	}
 }
-
-
-
-
-
