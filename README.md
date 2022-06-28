@@ -9,7 +9,7 @@ Compile with:
 ```javac stringPermutations.java```
 
 Execute with:
-```example usage: java stringPermutations```
+```java stringPermutations```
 
 ### Misc
 All possible permutations given a string of length N has a total of: N! / ((character repeats)! * (character repeats)! etc...) possible combinations.  As N increases, you will notice a drastic delay in displaying all possibiliites.
