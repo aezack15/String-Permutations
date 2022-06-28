@@ -12,4 +12,4 @@ Execute with:
 ```java stringPermutations```
 
 ### Misc
-All possible permutations given a string of length N has a total of: N! / ((character repeats)! * (character repeats)! etc...) possible combinations.  As N increases, you will notice a drastic delay in displaying all possibilities.
+All possible permutations given a string of length N has a total of: N! / ((character repeats)! * (character repeats)! etc...) possible combinations.  As N increases, you will notice a drastic delay in displaying all possibilities, also becuase my propietary algorithm to solve this problem is less than optimal... This project was more of a "proof of concept" to develop a program under time stress.  The entirety of this program was written during a flight from LAX to BWI.
